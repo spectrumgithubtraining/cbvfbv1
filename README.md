@@ -1,11 +1,12 @@
 Function-based view vs Class-based views
-In Django, a function-based view (FBV) is a view that is implemented as a Python function. It is one of the two primary ways to define views in Django, the other being class-based views (CBVs).
+In Django, a function-based view (FBV) is a view that is implemented as a Python function. 
+It is one of the two primary ways to define views in Django, the other being class-based views (CBVs).
 Function-based view:
-from django.http import HttpResponse
+**from django.http import HttpResponse
 def my_view(request):
     if request.method == 'GET':
         # <view logic>
-        return HttpResponse('Hello world')
+        return HttpResponse('Hello world')**
 In class-based view, this will become:
 # myapp/views.py
 from django.http import HttpResponse
